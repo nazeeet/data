@@ -1,0 +1,12 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DataController;
+
+Route::get('/', [DataController::class, 'index']);
+Route::get('/data/create', [DataController::class, 'create']);
+Route::post('/data/create', [DataController::class, 'store']);
+Route::get('/data/{id}/edit', [DataController::class, 'edit'])->name('data.edit');
+Route::put('/data/{id}', [DataController::class, 'update'])->name('data.update');
+Route::get('/data/delete/{id}', [DataController::class, 'delete']);
+
