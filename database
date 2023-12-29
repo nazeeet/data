@@ -1,0 +1,7 @@
+CREATE TABLE perpustakaan (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nama VARCHAR(255) NOT NULL,
+    nim VARCHAR(20) NOT NULL,
+    angkatan INT NOT NULL,
+    jurusan VARCHAR(50) NOT NULL
+);
